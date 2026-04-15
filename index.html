@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cumpleaños Madelyn Italia</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="particles"></div>
+  <div id="introScreen" class="intro-screen">
+    <div class="intro-content">
+      <h1 class="intro-title">Madelyn Italia</h1>
+      <p>Toca para comenzar la invitación ✨</p>
+    </div>
+  </div>
+  <div class="slider">
+
+    <section class="slide hero-princesa">
+      <img src="assets/img/castillo.png" class="castillo">
+      <div class="hero-texto">
+        <h2 class="subtitulo">LA PRINCESA</h2>
+        <h1 class="nombre-princesa">Madelyn Italia</h1>
+        <div class="cumple-linea">
+          <span class="linea"></span>
+          <span class="cumple-texto">Cumple</span>
+          <span class="numero">4</span>
+          <span class="anitos">Añitos</span>
+          <span class="linea"></span>
+        </div>
+        <div class="contador-regresivo">
+          <div class="tiempo">
+            <span id="dias">00</span>
+            <p>Días</p>
+          </div>
+          <div class="tiempo">
+            <span id="horas">00</span>
+            <p>Horas</p>
+          </div>
+          <div class="tiempo">
+            <span id="minutos">00</span>
+            <p>Min</p>
+          </div>
+          <div class="tiempo">
+            <span id="segundos">00</span>
+            <p>Seg</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="princesas">
+        <img src="assets/img/aurora.png" class="princesa p1">
+        <img src="assets/img/ariel.png" class="princesa p2">
+        <img src="assets/img/bella.png" class="princesa p3">
+        <img src="assets/img/tiana.png" class="princesa p4">
+        <img src="assets/img/cenicienta.png" class="princesa p5">
+      </div>
+    </section>
+
+    <section class="slide ceremonia">
+      <h2>Fecha y Hora</h2>
+      <div class="marco-espejo">
+
+        <img src="assets/img/espejo.png" class="espejo">
+
+        <div class="contenido-ceremonia">
+          <div class="bloque">
+          <div class="bloque">
+            <h3>Recepción</h3>
+            <p>Sábado 09 de Mayo 2026</p>
+            <p>03:00 PM</p>
+            <a class="btn" target="_blank" href="https://maps.app.goo.gl/a6C74gPhWPPQVYqT7">
+              Ver ubicación
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <img src="assets/img/rapunzel.png" class="decoracion izquierda">
+      <img src="assets/img/jazmin.png" class="decoracion derecha">
+
+    </section>
+
+    <section class="slide regalos">
+      <h2>Sugerencia de Regalos</h2>
+
+      <div class="contenido-regalos">
+        <p>
+          Tu presencia es el mejor regalo
+        </p>
+
+        <p>
+          Pero si deseas tener un detalle con la festejada,
+          hemos preparado una mesa de regalos:
+        </p>
+
+        <a class="btn" target="_blank" 
+          href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51988069">
+          Ver mesa de regalos
+        </a>
+      </div>
+    </section>
+
+    <section class="slide confirmacion">
+
+      <div class="contenido-final">
+
+        <h2>Estás invitado</h2>
+        <p class="fecha-final">
+          Sábado 09 de Mayo 2026<br>
+        </p>
+
+        <p>
+          Confirma tu asistencia y acompáñanos
+          a celebrar este momento mágico.
+        </p>
+
+        <a class="btn" target="_blank" id="waLink">
+          Confirmar asistencia
+        </a>
+
+        <img src="assets/img/libro.png" class="libro">
+
+        <!-- Créditos -->
+        <div class="creditos">
+          <p>
+            Diseñado con amor por
+            <a href="https://shiny-maker.com/" target="_blank" class="marca">
+              Shiny Maker ✨
+            </a>
+          </p>
+
+          <div class="redes">
+            <a href="https://www.instagram.com/shinymakerstudio/" target="_blank">
+              <img src="assets/img/ig.png" alt="Instagram">
+            </a>
+
+            <a href="https://www.facebook.com/profile.php?id=61587591115184" target="_blank">
+              <img src="assets/img/fb.png" alt="Facebook">
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Princesa lateral -->
+      <img src="assets/img/blancanieves.png" class="princesa-lateral">
+
+    </section>
+  </div>
+
+  <div class="nav">
+    <button id="prev">←</button>
+    <span id="indicator">1 / 4</span>
+    <button id="next">→</button>
+  </div>
+
+  <audio id="bgMusic" loop preload="auto" playsinline>
+    <source src="assets/audio/musica.mp3" type="audio/mpeg">
+  </audio>
+
+  <button id="musicBtn" class="music-btn">
+    <img id="musicIcon" src="assets/img/play.svg" alt="music">
+  </button>
+  <div class="lightbox" id="lightbox">
+    <button class="lb-arrow lb-prev" id="lbPrev" aria-label="Anterior">‹</button>
+
+    <span class="cerrar" id="cerrar">&times;</span>
+    <img class="lightbox-img" id="lightbox-img" alt="Foto">
+
+    <button class="lb-arrow lb-next" id="lbNext" aria-label="Siguiente">›</button>
+  </div>
+  <script src="assets/js/script.js?v=2"></script>
+</body>
+
+</html>
